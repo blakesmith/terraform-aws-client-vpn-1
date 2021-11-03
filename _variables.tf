@@ -33,6 +33,12 @@ variable "dns_servers" {
   description = "List of DNS Servers"
 }
 
+variable "transport_protocol" {
+  type = string
+  default = "udp"
+  description = "The transport protocol for the VPN endpoint"
+}
+
 variable "organization_name" {
   description = "Name of organization to use in private certificate"
   default     = "ACME, Inc"

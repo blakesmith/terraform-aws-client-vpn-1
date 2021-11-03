@@ -4,6 +4,7 @@ resource "aws_ec2_client_vpn_endpoint" "default" {
   client_cidr_block      = var.cidr
   split_tunnel           = var.split_tunnel
   dns_servers            = var.dns_servers
+  transport_protocol     = lower(var.transport_protocol)
 
   authentication_options {
     type                       = var.authentication_type
