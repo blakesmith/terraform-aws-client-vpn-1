@@ -71,6 +71,5 @@ variable "split_tunnel" {
 }
 
 variable "security_group_id" {
-  default     = ""
   description = "Optional security group id to use instead of the default created"
 }
